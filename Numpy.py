@@ -56,3 +56,44 @@ list2.append(e*e) # e*e = squared
 print('list1:',list1)
 print('list2:',list2)
 
+
+# Arrays and Exponents
+import numpy as np
+arr1 = np.array([1,2,3])
+arr2 = arr1**2
+arr3 = arr1**3
+print('arr1:',arr1)
+print('arr2:',arr2)
+print('arr3:',arr3)
+
+
+# Math Operations and Arrays
+import numpy as np
+arr1 = np.array([1,2,3])
+sqrt = np.sqrt(arr1)
+log1 = np.log(arr1)
+exp1 = np.exp(arr1)
+print('sqrt:',sqrt)
+print('log1:',log1)
+print('exp1:',exp1)
+
+
+# Working with “-1” Subranges with Vectors
+import numpy as np
+# -1 => "all except the last element in …" (row or col)
+arr1 = np.array([1,2,3,4,5])
+print('arr1:',arr1)
+print('arr1[0:-1]:',arr1[0:-1])
+print('arr1[1:-1]:',arr1[1:-1])
+print('arr1[::-1]:', arr1[::-1]) # reverse!
+
+
+# Working with “-1” Subranges with Arrays
+import numpy as np
+# -1 => "the last element in …" (row or col)
+arr1 = np.array([(1,2,3),(4,5,6),(7,8,9),(10,11,12)])
+print('arr1:', arr1)
+print('arr1[-1,:]:', arr1[-1,:])
+print('arr1[:,-1]:', arr1[:,-1])
+print('arr1[-1:,-1]:',arr1[-1:,-1])
+
