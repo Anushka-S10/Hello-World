@@ -97,3 +97,44 @@ print('arr1[-1,:]:', arr1[-1,:])
 print('arr1[:,-1]:', arr1[:,-1])
 print('arr1[-1:,-1]:',arr1[-1:,-1])
 
+
+# Arrays and Vector Operations
+
+import numpy as np
+a = np.array([[1,2], [3, 4]])
+b = np.array([[5,6], [7,8]])
+print('a: ', a)
+print('b: ', b)
+print('a + b: ', a+b)
+print('a _ b: ', a_b)
+print('a * b: ', a*b)
+print('a / b: ', a/b)
+print('b / a: ', b/a)
+print('a.dot(b):',a.dot(b))
+
+
+# NumPy and Dot Products (1)
+
+import numpy as np
+a = np.array([1,2])
+b = np.array([2,3])
+dot2 = 0
+for e,f in zip(a,b):
+    dot2 += e*f
+print('a: ',a)
+print('b: ',b)
+print('a*b: ',a*b)
+print('dot1:',a.dot(b))
+print('dot2:',dot2)
+
+
+import numpy as np
+a = np.array([1,2])
+b = np.array([2,3])
+print('a: ',a)
+print('b: ',b)
+print('a.dot(b): ’,a.dot(b))
+print('b.dot(a): ',b.dot(a))
+print('np.dot(a,b):',np.dot(a,b))
+print('np.dot(b,a):',np.dot(b,a))
+
